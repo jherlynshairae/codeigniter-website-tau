@@ -9,6 +9,7 @@
             <a href="<?= base_url('admin/dashboard') ?>" class="text-dark text-decoration-none fw-medium">Dashboard</a>
             <a href="<?= base_url('admin/research') ?>" class="text-dark text-decoration-none fw-medium">Research</a>
             <a href="<?= base_url('admin/news') ?>" class="text-dark text-decoration-none fw-medium">News</a>
+            <a href="<?= base_url('admin/offices') ?>" class="text-dark text-decoration-none fw-medium">Manage Offices</a>
         </nav>
         <div>
             <a href="<?= base_url('admin/logout') ?>" class="btn btn-outline-danger btn-sm">Logout</a>

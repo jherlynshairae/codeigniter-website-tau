@@ -27,10 +27,20 @@ $routes->get('departments/(:segment)', 'Admissions::department/$1');
 $routes->get('careers', 'Careers::index');
 $routes->get('admin/dashboard', 'Admin\Admin::index');
 $routes->get('history', 'History::index');
+$routes->get('offices', 'Offices::index');
+
 
 // Route group for controllers inside the app/Controllers/Admin/ subfolder
 $routes->group('admin', function($routes) {
     $routes->get('research', 'Admin\Research::index');
     $routes->get('research/edit/(:num)', 'Admin\Research::edit/$1');
     $routes->post('research/update/(:num)', 'Admin\Research::update/$1');
+
+
+    $routes->get('offices', 'Admin\Offices::index');
+    $routes->get('offices/create', 'Admin\Offices::create');
+    $routes->post('offices/store', 'Admin\Offices::store');
+    $routes->get('offices/edit/(:num)', 'Admin\Offices::edit/$1');
+    $routes->post('offices/update/(:num)', 'Admin\Offices::update/$1');
+    $routes->post('offices/delete/(:num)', 'Admin\Offices::delete/$1');
 });

@@ -155,6 +155,7 @@
     <a href="<?= base_url('admin/carousel') ?>"><i class="fa-solid fa-images"></i> Carousel</a>
     <a href="<?= base_url('admin/research') ?>"><i class="fa-solid fa-microscope"></i> Research & Dev</a>
     <a href="<?= base_url('admin/users') ?>"><i class="fa-solid fa-users"></i> Users</a>
+    <a href="<?= base_url('admin/offices') ?>" class="text-dark text-decoration-none fw-medium">Manage Offices</a>
     
     <a href="<?= base_url('logout') ?>"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
 </div>
